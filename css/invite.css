@@ -1,0 +1,56 @@
+body {
+    font-family: 'Otama', serif;
+    color: #7593c6;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 5rem;
+    background: #efc5b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    --mask:
+        radial-gradient(27.59px at 39.00px 50%, #000 99%, #0000 101%) 0 calc(50% - 40px)/51% 80px repeat-y,
+        radial-gradient(27.59px at -19px 50%, #0000 99%, #000 101%) 20px 50%/calc(51% - 20px) 80px repeat-y,
+        radial-gradient(27.59px at calc(100% - 39.00px) 50%, #000 99%, #0000 101%) 100% calc(50% - 40px)/51% 80px repeat-y,
+        radial-gradient(27.59px at calc(100% + 19.00px) 50%, #0000 99%, #000 101%) calc(100% - 20px) 50%/calc(51% - 20px) 80px repeat-y;
+    -webkit-mask: var(--mask);
+
+}
+
+@media print {
+
+    body {
+        font-family: 'Otama', serif !important;;
+        color: #7593c6 !important;;
+        height: 100vh !important;;
+        margin: 0 !important;;
+        display: flex !important;;
+        justify-content: center !important;;
+        align-items: center !important;;
+    }
+
+    main {
+        padding: 5rem; !important;
+        background: #efc5b9; !important;
+        display: flex; !important;
+        justify-content: center; !important;
+        align-items: center !important;;
+        flex-direction: column !important;;
+        text-align: center !important;;
+        --mask:
+            radial-gradient(27.59px at 39.00px 50%, #000 99%, #0000 101%) 0 calc(50% - 40px)/51% 80px repeat-y,
+            radial-gradient(27.59px at -19px 50%, #0000 99%, #000 101%) 20px 50%/calc(51% - 20px) 80px repeat-y,
+            radial-gradient(27.59px at calc(100% - 39.00px) 50%, #000 99%, #0000 101%) 100% calc(50% - 40px)/51% 80px repeat-y,
+            radial-gradient(27.59px at calc(100% + 19.00px) 50%, #0000 99%, #000 101%) calc(100% - 20px) 50%/calc(51% - 20px) 80px repeat-y !important;;
+        -webkit-mask: var(--mask) !important;;
+
+    }
+}

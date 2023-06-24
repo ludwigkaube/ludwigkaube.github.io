@@ -28,7 +28,9 @@ main {
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;
-
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -166,4 +168,8 @@ h1 {
  */
 #menuToggle input:checked~ul {
     transform: translate(100%, 0);
+}
+
+a {
+    color: inherit;
 }
